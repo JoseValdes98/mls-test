@@ -4,7 +4,7 @@ const TU_TENANT_ID = "8a91e271-d2b1-4665-9ca3-cf16ab3493bb";
 export const msalConfig: Configuration = {
  auth: {
  clientId: TU_CLIENT_ID,
- authority: `https://login.microsoftonline.com/organizations`,
+ authority: `https://login.microsoftonline.com/${TU_TENANT_ID}`,
  redirectUri: "http://localhost:5173",
  },
  cache: {
